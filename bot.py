@@ -26,7 +26,7 @@ async def update_status():
     players, max_players, online = get_server_info()
 
     if online:
-        activity = discord.CustomActivity(name=f"{players} / {max_players} Онлайн")
+        activity = discord.CustomActivity(name=f"{players} / {max_players} Онлайна")
         status   = discord.Status.online if players > 0 else discord.Status.idle
     else:
         activity = discord.CustomActivity(name="Сервер недоступен 🔴")
